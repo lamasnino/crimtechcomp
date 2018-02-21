@@ -50,7 +50,7 @@ class Article(models.Model):
     # ???
     #if writer == nul:
         # b= ? Article?
-        # e= entry.object.get 
+        # e= entr.object.get 
         # b.entry_set.remove(e)
         
     
