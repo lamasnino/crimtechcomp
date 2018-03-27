@@ -1,0 +1,176 @@
+body {
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Raleway', sans-serif;
+/*  background: linear-gradient(rgba(37, 143, 193, 0), rgba(37, 143, 193, 0.4));
+*/}
+/*
+p { font-family:"Raleway"; color: black;
+}*/
+
+
+html {
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+.container{
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: center;        
+        background: #333;
+        padding: 10px 0 0 10px;
+        color: #fff;
+      /*background: rgba(37, 143, 193, 0.4);*/
+        text-align: center;
+        font-size: 14pt;
+        font-family: 'Raleway', sans-serif;
+      }
+
+.tooltip {
+  position:relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+    width: 140px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+}
+
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }    
+
+
+/*#logo{
+  image-rendering: url('http://images.mentalfloss.com/sites/default/files/styles/mf_image_16x9/public/bill_ted1.jpg?itok=WpNXH0fs&resize=1100x619/static/img/logo.jpeg');
+}*/
+
+
+#logo{
+  max-width:50px;
+  max-height:50px;
+  position: right
+
+/*  background-image:url('http://images.mentalfloss.com/sites/default/files/styles/mf_image_16x9/public/bill_ted1.jpg?itok=WpNXH0fs&resize=1100x619/static/img/logo.jpeg');
+*/
+}
+
+#newton{
+  max-width:300px;
+  max-height:300px;
+}
+
+
+
+.parallax {
+  background-image: url('https://www.what-dog.net/Images/faces2/scroll0015.jpg')
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+nav a{
+  color: #fff;
+  text-decoration: none;
+  padding: none; /*75px 25px*/
+  display: inline-block;
+}
+
+
+.wrapperParallax {
+  height: 50vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+.section {
+  position: relative;
+  height: 50vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
+}
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 50%;
+  z-index: -1;
+}
+
+.static {
+  background: lightblue;
+}
+
+.bg1::after {
+  background-image: url('https://www.what-dog.net/Images/faces2/scroll0015.jpg');
+}
+
+.bg2::after {
+  background-image: url('https://www.what-dog.net/Images/faces2/scroll0015.jpg');
+}
+
+
+
+.bodacious {
+  animation: bodacious 1s infinite;
+}
+
+@keyframes bodacious{
+  20% {
+    color: red;
+  }
+  40% {
+    color: yellow;
+  }
+  60% {
+    color: green;
+  }
+  80% {
+    color: blue;
+  }
+  100% {
+    color: orange;
+  }
+
