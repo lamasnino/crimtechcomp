@@ -6,4 +6,5 @@ from decode.views import *
 
 urlpatterns = [
     url(r'^.*', decode_view),
+    #url(r'^.*',index,name = 'index')
 ]

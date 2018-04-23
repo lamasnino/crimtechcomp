@@ -1,0 +1,28 @@
+
+
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+<a href="{% url 'home' %}">
+ {% block body %}
+ <p>Home page! from the big top folder<p>
+
+ <!--
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+
+    <title>Encode your line of text!</title>
+    <!-- ><!--this tells our webpage how to find its css stylesheet -->
+<!--
+  </head>
+
+  <body><p>Encode your line of text!</p>
+  	<p>try inputting something else/p>
+
+  </body>
+
+ </html>
+-->
+ {% endblock %}

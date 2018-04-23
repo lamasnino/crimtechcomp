@@ -5,6 +5,8 @@ from encode.views import *
 
 urlpatterns = [
     url(r'^.*', encode_view),
+    #url(r'^.*',include(crypto.views.home))
+    #url(r'^.*',index,name = 'index')
 ]
 
 # make random test function

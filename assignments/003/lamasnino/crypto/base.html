@@ -1,0 +1,29 @@
+
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'css/crypto_css.css' %}">
+
+    <title>
+        {% block title %}{% endblock %}
+    </title>
+  </head>
+  <body>
+    <div class = "header"><a href="encode">Home         </a><a href="#">Encode          </a><a href="#">Decode          </a></div>
+    {% block body %}
+    {% endblock %}
+    <div class = "footer">Thanks for checking this footer out why does this still do things here</footer>
+  </body>
+</html>
+        <!-- navbar here! 
+    <div class = "header">
+      <h1>header</h1>
+    </div>
+
+      <nav> 
+        <a href="#">Home</a>
+      </nav>-->

@@ -1,0 +1,47 @@
+{% extends '/Users/andrealamasino/crimtechcomp/assignments/003/lamasnino/crypto/crypto/templates/base.html' %}
+
+{% load staticfiles %}
+
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+        <!-- <link rel="stylesheet" href= "{% static '/Users/andrealamasino/crimtechcomp/assignments/003/lamasnino/crypto/crypto/static/css/crypto_css.css' %}"> -->
+
+    <title>Encode your message!</title>
+    <!-- this tells our webpage how to find its css stylesheet -->
+
+  </head>
+
+  <body>
+
+{% block body %}
+    <h3>Encode your message!</h3>
+  	<p>{{template_title}}</p>
+    <p>placeholder for local or global button</p>
+  	<p>there should be a form below!</p>
+<!--   	<form action = "process.php" method = "POST">
+ -->  	<form method = "POST">
+
+  		Message:
+  		<input type = "text" name = 'message' placeholder = "Submit your message to be encrypted here!"/>
+  		Key:
+  		<input type = "text" name = 'key' placeholder = "Submit your key here"/>
+  		<input type = "submit" name = "submit" value = "Submit your message and key"/>
+		{% csrf_token %}
+	</form>
+{% endblock %}
+
+<!--   	<form method="post">
+    <input name="thing1" placeholder="I'm thing1"/>
+    <input name="thing2" placeholder="I'm thing2"/>
+    <button type="submit">Submit Me!</button>
+    {% csrf_token %} 
+</form>-- >
+
+
+
+
+  </body>
+
+ </html>
